@@ -1,13 +1,17 @@
 $(document).ready(function() {
+// Добавьте в начало скрипта
+const basePath = window.location.hostname === 'belkud.github.io' 
+  ? '/Drawing_school/' 
+  : '';
 
-  const components = [
-    { id: 'header', file: 'components/header.html' },
-    { id: 'about_course', file: 'components/about_course.html' },
-    { id: 'materials', file: 'components/materials.html' },
-    { id: 'tariffs', file: 'components/tariffs.html' },
-    { id: 'faq', file: 'components/faq.html' },
-    { id: 'footer', file: 'components/footer.html' }
-  ];
+const components = [
+  { id: 'header', file: basePath + 'components/header.html' },
+  { id: 'about_course', file: basePath + 'components/about_course.html' },
+  { id: 'materials', file: basePath + 'components/materials.html' },
+  { id: 'tariffs', file: basePath + 'components/tariffs.html' },
+  { id: 'faq', file: basePath + 'components/faq.html' },
+  { id: 'footer', file: basePath + 'components/footer.html' }
+];
 
   let loadedCount = 0;
   
