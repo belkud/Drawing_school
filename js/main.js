@@ -1,5 +1,5 @@
 $(document).ready(function() {
-// Добавьте в начало скрипта
+// Добавьте в начало скрипта 
 const basePath = window.location.hostname === 'belkud.github.io' 
   ? '/Drawing_school/' 
   : '';
