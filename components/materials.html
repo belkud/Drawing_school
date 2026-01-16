@@ -1,0 +1,217 @@
+<!-- Убираем padding и margin, растягиваем секцию на всю ширину экрана -->
+<section class="materials w-100 vw-95 mt-5">
+    <!-- Внутренний контейнер для центрирования содержимого с максимальной шириной 1200px -->
+    <div class="container-fluid">
+        <!-- Центрируем контент и ограничиваем его максимальную ширину -->
+        <div class="d-flex justify-content-center w-100">
+            <div class="row no-gutters container_materials w-100">
+                <div  class="col-12 col-lg-6 pl-5 d-flex flex-column material_image">
+                    <div class="border border-warning p-3 p-md-4 p-lg-4 mr-lg-n2 border-thick target-audience-section overflow-auto"
+                        style="max-height: 400px;">
+                        <h1 class="text-center mb-3 mb-md-4 orange-title uppercase ">Для кого будет <br> полезен курс
+                        </h1>
+                        <div>
+                            <strong>На моем курсе «Петербург сквозь года с Владимиром Заруцким» вы научитесь рисовать
+                                акварелью
+                                городские
+                                пейзажи. Этот курс для тех, кто хочет <span class="color-blue">научиться или
+                                    усовершенствовать
+                                    свои навыки
+                                    в
+                                    акварели.</span> Уверен, вам понравится!</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 pr-5 mt-3 mt-lg-0 city_image">
+                    <div class="image-placeholder h-100">
+                        <img src="public/img-2x-scale-2_00x.jpg" alt="Иллюстрация к курсу акварели"
+                            class="border border-warning border-thick img-fluid  object-fit-cover w-100 h-100 "
+                            style="max-height: 400px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Тоже растягиваем на всю ширину, но содержимое центрируем -->
+        <div class="d-flex justify-content-center m-auto w-100 mt-5">
+            <div class="w-100 text-center border-bottom border-warning border-5 py-4 px-3 m-auto"
+                style="max-width: 1200px;">
+                <h1 class="text-center mb-5 orange-title uppercase">Материалы на курс</h1>
+
+                <div class="row mb-4 justify-content-center">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                        <div class="material-item d-flex flex-column align-items-center">
+                            <img src="public/1.png" class="img-fluid rounded shadow-sm mb-2"
+                                style="width: 120px; height: 120px; object-fit: cover;" alt="Краски для акварели">
+                            <div class="text-center p-2 rounded" style="max-width: 150px;">
+                                <strong>Краски</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                        <div class="material-item d-flex flex-column align-items-center">
+                            <img src="public/2.png" class="img-fluid rounded shadow-sm mb-2"
+                                style="width: 120px; height: 120px; object-fit: cover;" alt="Кисти для акварели">
+                            <div class="text-center p-2 rounded" style="max-width: 150px;">
+                                <strong>Кисти</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                        <div class="material-item d-flex flex-column align-items-center">
+                            <img src="public/3.png" class="img-fluid rounded shadow-sm mb-2"
+                                style="width: 120px; height: 120px; object-fit: cover;" alt="Бумага для акварели">
+                            <div class="text-center p-2 rounded" style="max-width: 150px;">
+                                <strong>Бумага</strong> <br> <small>300г/м², хлопок Saunders Waterford, Палаццо</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                        <div class="material-item d-flex flex-column align-items-center">
+                            <img src="public/4.png" class="img-fluid rounded shadow-sm mb-2"
+                                style="width: 120px; height: 120px; object-fit: cover;" alt="Дополнительные материалы">
+                            <div class="text-center p-2 rounded" style="max-width: 150px;">
+                                <strong>Карандаши</strong> <br> <small>2B, 3B</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- контейнер с кнопкой и открывающимся списком -->
+                <div class="row paints-list justify-content-center">
+                    <div class="col-12">
+                        <div class="materials-container" id="materialsContainer">
+                            <div class="text-center text-lg-left p-3">
+                                <button class="btn btn-info rounded-pill border border-primary border-2 toggle-list-btn"
+                                    style="min-width: 200px; max-width: 100%;">
+                                    Список красок
+                                </button>
+                            </div>
+
+                            <div class="materials-list p-3 p-md-4 rounded-bottom border-top-0" style="display: none;">
+                                <div
+                                    class="d-flex flex-column flex-md-row justify-content-center text-center text-md-left">
+                                    <ul class="orange-list mr-md-4 mb-3 mb-md-0">
+                                        <li>Кобальт лазурно-голубой</li>
+                                        <li>Горизонт синий</li>
+                                        <li>Кобальт бирюзовый</li>
+                                        <li>Церулеум</li>
+                                        <li>Сиена натуральная</li>
+                                        <li>Охра красная</li>
+                                    </ul>
+                                    <ul class="orange-list">
+                                        <li>Сиена жженая</li>
+                                        <li>Пиррол оранжевый</li>
+                                        <li>Кадмий красный светлый</li>
+                                        <li>Опера</li>
+                                        <li>Кобальт</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+
+    section.materials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+        /* Убираем горизонтальный скролл, если контент выходит за границы */
+    }
+
+    .materials>.container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @media (max-width: 576px) {
+
+        .materials .col-12 {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+
+        .target-audience-section {
+            margin-right: 0 !important;
+        }
+
+        .border-warning {
+            border-width: 3px !important;
+        }
+
+        section.materials {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        /* Планшеты */
+        .image-placeholder img {
+            max-height: 300px !important;
+        }
+
+        .orange-title {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .materials {
+            margin: 0;
+        }
+        .material_image, .city_image {
+            padding:  40px !important;
+            padding-top: 0px !important;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container_materials {
+            max-width: 1200px;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .material-item img {
+            width: 100px !important;
+            height: 100px !important;
+        }
+
+        .material-item div {
+            max-width: 120px !important;
+            font-size: 0.9rem;
+        }
+
+        .btn-info {
+            min-width: 180px !important;
+            font-size: 0.9rem;
+        }
+    }
+
+  
+    .orange-list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .orange-list li {
+        margin-bottom: 0.5rem;
+        word-break: break-word;
+    }
+</style>
