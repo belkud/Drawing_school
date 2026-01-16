@@ -1,8 +1,16 @@
 $(document).ready(function() {
-  // Динамически определяем базовый путь
-  const isGitHubPages = window.location.hostname.includes('github.io');
-  const basePath = isGitHubPages ? '/Drawing_school/' : '';
+  // АВТОМАТИЧЕСКОЕ определение базового пути
+  let basePath = '';
   
+  // Если мы на GitHub Pages (в домене github.io)
+  if (window.location.hostname.includes('github.io')) {
+    // Берём путь к текущей странице
+    const pathSegments = window.location.pathname.split('/');
+    // Для /Drawing_school/ -> ['', 'Drawing_school', '']
+    if (pathSegments.length > 1 && pathSegments[1]) {
+      basePath = '/' + pathSegments[1] + '/';
+    }
+  }
   const components = [
     { id: 'header', file: basePath + 'components/header.html' },
     { id: 'about_course', file: basePath + 'components/about_course.html' },
