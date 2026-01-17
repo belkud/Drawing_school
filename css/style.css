@@ -1,7 +1,7 @@
 body {
   font-family: 'PT Sans', sans-serif;
   padding-top: 80px;
-  background: #60ade0;
+  background: #e0ed22;
   /* overflow-x: hidden; */
 }
  
@@ -19,6 +19,8 @@ body {
     .navbar-brand {
       font-family: 'BERNIERDISTRESSED', sans-serif;
       letter-spacing: 1px;
+
+
     }
   
     .navbar {
