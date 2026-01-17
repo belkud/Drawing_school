@@ -18,7 +18,7 @@ fetch('/Drawing_school/components/header.html')
 $(document).ready(function() {
 
   const components = [
-    { id: 'header', file: 'components/header.html' },
+    { id: 'header', file: 'https://github.com/belkud/Drawing_school/blob/main/components/header.html' },
     { id: 'about_course', file: 'components/about_course.html' },
     { id: 'materials', file: 'components/materials.html' },
     { id: 'tariffs', file: 'components/tariffs.html' },
