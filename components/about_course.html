@@ -22,9 +22,15 @@
         </div>
     </div>
 
-    <a href="#materials" class="btn-sidebar btn btn-warning shadow">
+    <a id="testBtn" href="#materials" class="btn-sidebar btn btn-warning shadow">
         Узнать подробности
     </a>
+<script>
+      let testBtn = document.querySelector('#testBtn')
+        testBtn.addEventListener('click', () => {
+            console.log('Файл работает');
+        });
+</script>
 
     <div class="container mt-5 mb-n5 pt-5 h5">
         <div class="row mt-5">
